@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="apple-mobile-web-app-title" content="My App">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0, minimum-scale=1.0, maximum-scale=1.0">
+		<title>My App</title>
+		<link rel="stylesheet" href="css/style.css" type="text/css" media="screen" />
+		<script defer src="js/fastclick.js"></script>
+		<script defer src="js/app.js"></script>
+	</head>
+	<body class="ios7"> <!-- native | ios7 -->
+		<section id="view-home" class="active">
+			<header>
+				<button class="left" data-vin="view-about" data-sd="popin">
+					<div class="label">About</div>
+				</button>
+				<h1>Stop The Rain</h1>
+			</header>
+			<div class="scrollMask"></div>
+			<div class="scrollWrap">
+				<div class="scroll">
+				<div class="content">
+					<center><button data-vin="view-sunny"><img  src="rain.gif" /></button></center>
+				</div>
+			</div>
+			</div>
+		</section>
+		<section class="hidden" id="view-sunny">
+			<header>
+				<button class="left arrow" data-vin="view-home" data-sd="sr">
+					<div class="label">Back to rain</div>
+				</button>
+				<h1>SUNNY! :D</h1>
+				<button class="right bold green" data-vin="view-stormy" data-sd="sl">
+					<div class="label">Stormy :(</div>
+				</button>
+			</header>
+			<div class="scrollMask"></div>
+			<div class="scrollWrap">
+				<div class="scroll">
+				<div class="content">
+                    <center><button data-vin="view-sunny"><img  src="sunny.gif" /></button></center>
+				</div>
+			</div>
+			</div>
+		</section>
+			<header>
+				<h1>Tab 3</h1>
+			</header>
+			<div class="scrollMask"></div>
+			<div class="scrollWrap">
+				<div class="scroll">
+				<div class="content">
+                    <h2>Some title</h2>
+                    <p>Lorem Ipsum.</p>
+				</div>
+			</div>
+			</div>
+		</section>
+		<section class="hidden" id="view-stormy">
+			<header>
+				<button class="left arrow" data-vin="view-home" data-sd="sr">
+					<div class="label">Back to sunny</div>
+				</button>
+				<h1>Stormy! :(</h1>
+				
+			</header>
+			<div class="scrollMask"></div>
+			<div class="scrollWrap">
+				<div class="scroll">
+				<div class="content">
+                    <center><button data-vin="view-sunny"><img  src="stormy.gif" /></button></center>
+				</div>
+			</div>
+			</div>
+		</section>
+		<section class="hidden" id="view-about">
+			<header>
+				<h1>About</h1>
+				<button class="right bold" data-vin="view-home" data-sd="popout">
+					<div class="label">Done</div>
+				</button>
+			</header>
+			<div class="scrollMask"></div>
+			<div class="scrollWrap">
+				<div class="scroll">
+				<div class="content">
+                    <h2>About the developers</h2>
+                    <p>This app was developed by Tom Glass and Jazib Haider. This app is a response to <a href="http://www.ideaswatch.com/startup-idea/mobile-app-that-stops-the-rain">this</a>. 
+					We found it too amazing to leave this app so we made it.<br><br>We make more apps, checkout <a href="http://isoniqueapps.com">iSoniqueapps.com</a> </p>
+					<p>If you have a idea send it to me @ <a href="mailto:tom.glass@icloud.com">tom.glass@icloud.com</a>. Enjoy</p>
+					<br><br><br>
+					<h2>Thanks to</h2>
+					<p>https://github.com/c2prods/Project-Tyson -- We owe these guys :)</p>
+					<center><iframe scrolling="no" style="border: 0; width: 468px; height: 60px;" src="http://coinurl.com/get.php?id=30334&SSL=1"></iframe></center>
+				</div>
+			</div>
+			</div>
+		</section>
+		<nav>
+			
+			</button><button id="btn2" data-vin="view-sunny">
+				<div class="btn-icon" style="-webkit-mask-image: url(img/icons/list-alt.svg);"></div>
+				<div class="label">Make it sunny</div>
+			</button>
+		</nav>
+	</body>
+</html>
